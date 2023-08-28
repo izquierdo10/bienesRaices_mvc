@@ -1,0 +1,40 @@
+.seccion-inferior{
+    @include tablet {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+
+.entrada-blog {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.texto-entrada{
+    a{
+        color: $negro;
+    }
+    h4 {
+        margin: 0;
+        line-height: 1.4;
+
+        &::after{
+            content:'';
+            display: block;
+            width: 20rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.informacion-meta {
+    span {
+        color: $amarillo;
+    }
+}

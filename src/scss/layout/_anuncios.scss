@@ -1,0 +1,43 @@
+.contenedor-anuncios{
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.anuncio {
+    background-color: $gris;
+    border: 1px solid $grisBorde;
+    margin-bottom: 2rem;
+
+    .contenido-anuncio {
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+}
+
+.resumen-propiedad {
+    background-color: $gris;
+}
+
+.precio{
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+.iconos-caracteristicas{
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    padding: 0;
+    
+
+    p{
+        font-weight:900;
+    }
+}
